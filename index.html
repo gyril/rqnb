@@ -47,58 +47,135 @@
             background-color: #ddd;
             color: black;
         }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            padding: 10px 0;
+        }
+
+        h1 {
+            border-bottom: 3px solid #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        .logos img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .contact-info {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styles pour la navigation */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            .navbar a {
+                float: none;
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
     </style>
 </head>
 <body>
 
   <div class="navbar">
-    <a href="#about">Qui sommes-nous ?</a>
-    <a href="#activities">Les activités</a>
+    <a href="#qui-sommes-nous">Qui sommes-nous ?</a>
+    <a href="#activites">Les activités</a>
     <a href="#contact">Nous contacter</a>
   </div>
 
-
-  <h1>Qui sommes-nous ?</h1>
-  <h2>Une Régie de quartiers, c'est quoi ?</h2>
-  <p>Une Régie de quartiers est une association qui regroupe des habitants, des collectivités locales et des bailleurs sociaux pour intervenir ensemble dans la gestion de leur territoire.</p>
-
-  <h2>Genèse du projet à Noailles-Belsunce</h2>
-  <p>En partenariat avec la Ville de Marseille et la Mairie du 1er secteur, la création d’une Régie de quartiers est en cours à Belsunce et Noailles, deux quartiers emblématiques de Marseille, pour répondre aux difficultés d’emploi, de mal logement, d’insécurité, d’insalubrité et à l’ensemble des problèmes que rencontre ce territoire.</p>
-
-  <h2>Gouvernance</h2>
-  <p>C'est moi le chef.</p>
-
-  <h2>Partenaires</h2>
-  <div class="logos">
-      <!-- Insérez les logos ici. Exemple: -->
-      <!-- <img src="logo1.png" alt="Logo 1"> -->
-  </div>
-
-  <h2>Bénéficiaires</h2>
-  <p>Les habitants et les salariés.</p>
-
-  <h1>Les activités de la Régie de quartiers Noailles-Belsunce</h1>
-  <h2>Prestations</h2>
-  <ul>
-      <li>Végétalisation des rues, entretien des espaces verts</li>
-      <li>Surentretien de la voirie</li>
-      <!-- ... etc. pour les autres activités -->
-  </ul>
-
-  <h2>Lien social</h2>
-  <ul>
-      <li>Mise à disposition d’une salle informatique à destination des habitants du quartier ;</li>
-      <li>Médiation sociale auprès des habitants ;</li>
-      <!-- ... etc. pour les autres activités -->
-  </ul>
-
-  <h1>Nous contacter</h1>
-  <div class="contact-info">
-      <!-- Insérez le logo ici. Exemple: -->
-      <!-- <img src="logo_contact.png" alt="Logo Contact"> -->
-      <p>adresse : 39 A rue Nationale 13001 Marseille</p>
-      <p>mail : <a href="mailto:contact@regienoaillesbelsunce.org">contact@regienoaillesbelsunce.org</a></p>
-      <p>tel : 01.45.21.10.88</p>
+  <div class="container">
+    <h1 id="qui-sommes-nous">Qui sommes-nous ?</h1>
+    <h2>Une Régie de quartiers, c'est quoi ?</h2>
+    <p>Une Régie de quartiers est une association qui regroupe des habitants, des collectivités locales et des bailleurs sociaux pour intervenir ensemble dans la gestion de leur territoire.</p>
+  
+    <h2>Genèse du projet à Noailles-Belsunce</h2>
+    <p>En partenariat avec la Ville de Marseille et la Mairie du 1er secteur, la création d’une Régie de quartiers est en cours à Belsunce et Noailles, deux quartiers emblématiques de Marseille, pour répondre aux difficultés d’emploi, de mal logement, d’insécurité, d’insalubrité et à l’ensemble des problèmes que rencontre ce territoire.</p>
+  
+    <h2>Gouvernance</h2>
+    <p>C'est moi le chef.</p>
+  
+    <h2>Partenaires</h2>
+    <div class="logos">
+        <!-- Insérez les logos ici. Exemple: -->
+        <!-- <img src="logo1.png" alt="Logo 1"> -->
+    </div>
+  
+    <h2>Bénéficiaires</h2>
+    <p>Les habitants et les salariés.</p>
+  
+    <h1 id="activites">Les activités de la Régie de quartiers Noailles-Belsunce</h1>
+    <h2>Prestations</h2>
+    <ul>
+        <li>Végétalisation des rues, entretien des espaces verts</li>
+        <li>Surentretien de la voirie</li>
+        <!-- ... etc. pour les autres activités -->
+    </ul>
+  
+    <h2>Lien social</h2>
+    <ul>
+        <li>Mise à disposition d’une salle informatique à destination des habitants du quartier ;</li>
+        <li>Médiation sociale auprès des habitants ;</li>
+        <!-- ... etc. pour les autres activités -->
+    </ul>
+  
+    <h1 id="contact">Nous contacter</h1>
+    <div class="contact-info">
+        <!-- Insérez le logo ici. Exemple: -->
+        <!-- <img src="logo_contact.png" alt="Logo Contact"> -->
+        <p>adresse : 39 A rue Nationale 13001 Marseille</p>
+        <p>mail : <a href="mailto:contact@regienoaillesbelsunce.org">contact@regienoaillesbelsunce.org</a></p>
+        <p>tel : 01.45.21.10.88</p>
+    </div>
   </div>
 
 </body>
