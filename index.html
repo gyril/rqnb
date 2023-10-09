@@ -153,11 +153,11 @@
             font-size: 16px;
             border: none;
             outline: none;
+            padding: 0;
+            margin: 0;
             color: white;
-            padding: 14px 16px;
             background-color: inherit;
             font-family: inherit;
-            margin: 0;
         }
 
         .navbar .dropdown:hover .dropbtn {
@@ -204,8 +204,6 @@
 <body>
 
   <div class="navbar">
-    <a href="#about">Accueil</a>
-
     <!-- Dropdown Menu -->
     <div class="dropdown">
         <button class="dropbtn"><a href="#qui-sommes-nous">Qui sommes-nous ?</a></button>
@@ -214,10 +212,17 @@
             <a href="#genese">Genèse du projet à Noailles-Belsunce</a>
             <!--... autres liens h2 ...-->
         </div>
-    </div>
-
-    <a href="#activites">Les activités</a>
-    <a href="#contact">Nous contacter</a>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="#activites">Les activités</a></button>
+        <div class="dropdown-content">
+            <a href="#prestations">Prestations</a>
+            <a href="#lien-social">Lien social</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="#contact">Nous contacter</a></button>
+      </div>
   </div>
 
   <div class="container">
@@ -241,14 +246,14 @@
     <p>Les habitants et les salariés.</p>
   
     <h1 id="activites">Les activités de la Régie de quartiers Noailles-Belsunce</h1>
-    <h2>Prestations</h2>
+    <h2 id="prestations">Prestations</h2>
     <ul>
         <li>Végétalisation des rues, entretien des espaces verts</li>
         <li>Surentretien de la voirie</li>
         <!-- ... etc. pour les autres activités -->
     </ul>
   
-    <h2>Lien social</h2>
+    <h2 id="lien-social">Lien social</h2>
     <ul>
         <li>Mise à disposition d’une salle informatique à destination des habitants du quartier ;</li>
         <li>Médiation sociale auprès des habitants ;</li>
