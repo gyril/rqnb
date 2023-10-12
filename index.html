@@ -188,6 +188,30 @@
           overflow-y: hidden;
           overflow-x: auto;
         }
+
+        .org-chart tr td:first-child {
+          text-align: right;
+          padding-right: 10px;
+        }
+
+        .org-chart tr td:not(:first-child) {
+          text-align: center;
+          vertical-align: top;
+          border-radius: 5px;
+          padding: 5px;
+        }
+
+        .org-chart tr td:not(:first-child) {
+          background-color: #80d0f1;
+        }
+
+        .org-chart tr:first-child td:not(:first-child) {
+          background-color: #88c896;
+        }
+
+        .org-chart tr:last-child td:not(:first-child) {
+          background-color: #fbbf49;
+        }
     </style>
 </head>
 
@@ -226,7 +250,7 @@
       <ul>
         <li><strong>Un projet citoyen</strong> : les Régies mobilisent les habitants pour qu’ils participent aux décisions de l’association et à la gestion de leur cadre de vie.  Les habitants sont majoritaires dans les instances de gouvernance des Régies de quartiers et de territoires.</li>
         
-        <li><strong>Une finalité sociale</strong> : une Régie génère du lien social à travers ses activités et ses services, et contribue à la transition écologique.. Une Régie crée des emplois destinés aux habitants du territoire les plus en difficultés, et leur permet de construire un véritable parcours d’insertion par un accompagnement socioprofessionnel et une formation adaptée. </li>
+        <li><strong>Une finalité sociale et écologique</strong> : une Régie génère du lien social à travers ses activités et ses services, et contribue à la transition écologique.. Une Régie crée des emplois destinés aux habitants du territoire les plus en difficultés, et leur permet de construire un véritable parcours d’insertion par un accompagnement socioprofessionnel et une formation adaptée. </li>
     
         <li><strong>Une finalité économique</strong> : une Régie contractualise financièrement des marchés techniques dans le cadre de la gestion urbaine de proximité (entretien, maintenance et embellissement du cadre de vie). Une Régie crée des activités pour répondre à des besoins collectifs non satisfaits ou émergents. Elle réinjecte sur le territoire, en circuit court, les flux monétaires générés par son activité.</li>
       </ul>
@@ -240,32 +264,25 @@
     
       <h2 id="gouvernance">Gouvernance</h2>
       <div class="lateral-scroll">
-        <table>
+        <table class="org-chart">
           <!-- Header -->
           <tr>
               <td>Adhérents</td>
-              <td colspan="3">Assemblée générale constituée d'adhérents, acteurs locaux, institutions.</td>
+              <td colspan="3">Assemblée générale constituée d'adhérents, acteurs locaux, institutions</td>
           </tr>
           <!-- Row 1: Positions -->
           <tr>
-              <td>Conseil d'Administration</td>
-              <td>Collège Habitants</td>
-              <td>Collège Membres de droits (désignés ès qualité)</td>
-              <td>Collège Acteur socio-économiques</td>
+              <td><div>Conseil d'administration</div><div></div></td>
+              <td><div><strong>Collège Habitants</strong></div><div>Habitants et habitués des quartiers Noailles et Belsunce</div></td>
+              <td><div><strong>Collège Membres de droits</strong><br />(désignés ès qualité)</div><div>Collectivités, institutions, bailleurs sociaux, structures d’insertion par le logement</div></td>
+              <td><div><strong>Collège Acteurs socio-économiques</strong></div><div>Associations du territoire et Régies de quartiers marseillaises</div></td>
           </tr>
           <!-- Row 2: Names -->
           <tr>
-              <td>John Doe</td>
-              <td>Jane Smith</td>
-              <td>Robert Brown</td>
-              <td>Emily White</td>
-          </tr>
-          <!-- Row 3: Additional info (e.g., department or contact) -->
-          <tr>
-              <td>Dept. A</td>
-              <td>Dept. B</td>
-              <td>Dept. C</td>
-              <td>Dept. D</td>
+              <td><div>Bureau</div></td>
+              <td><div><strong>Pierre ALBOUY</strong></div><div>Président</div></td>
+              <td><div><strong>Valérie CALVIAC</strong></div><div>Trésorière</div></td>
+              <td><div><strong>Karim BOUSSALEM</strong></div><div>Secréatire</div></td>
           </tr>
         </table>
       </div>
@@ -273,10 +290,10 @@
       <h2 id="partenaires">Partenaires</h2>
       <div class="logos">
         <img src="prefet.png" alt="logo-partenaire">
-        <img src="mairie-1-7.png" alt="logo-partenaire">
         <img src="mairie.png" alt="logo-partenaire">
-        <img src="mdr.png" alt="logo-partenaire">
+        <img src="mairie-1-7.png" alt="logo-partenaire">
         <img src="pe.png" alt="logo-partenaire">
+        <img src="mdr.png" alt="logo-partenaire">
         <img src="rs13.png" alt="logo-partenaire">
         <img src="rsnl.png" alt="logo-partenaire">
         <img src="cco.png" alt="logo-partenaire">
@@ -296,13 +313,13 @@
         <li>
           <strong>Les salariés en insertion recrutés par la Régie de quartiers.</strong> <br /> 
           Tous les salariés sont des personnes en difficulté vis-à-vis de l’emploi, avec un profil très différent selon leur contexte personnel et leur parcours de vie. La Régie de quartiers Noailles-Belsunce se fixe pour mission d’insérer des personnes pour lesquelles l’accès à l’emploi ne paraît pas envisageable dans les conditions ordinaires du marché de l’emploi et qui nécessitent un accompagnement renforcé, tels que : <br />
-          &nbsp;- les bénéficiaires des minimas sociaux (RSA, ASS, AAH…) ;<br />
-          &nbsp;- les demandeurs d’emplois inscrits depuis plus de 12 mois ;<br />
-          &nbsp;- les bas niveaux de qualification ;<br />
-          &nbsp;- les personnes en situation de handicap ;<br />
-          &nbsp;- les personnes placées sous main de justice ;<br />
-          &nbsp;- les jeunes de moins de 26 ans, notamment les jeunes QPV ;<br />
-          &nbsp;- les personnes de plus de 50 ans (seniors).
+          &nbsp;- les bénéficiaires des minimas sociaux (RSA, ASS, AAH…)<br />
+          &nbsp;- les demandeurs d’emplois inscrits depuis plus de 12 mois<br />
+          &nbsp;- les bas niveaux de qualification<br />
+          &nbsp;- les personnes en situation de handicap<br />
+          &nbsp;- les personnes placées sous main de justice<br />
+          &nbsp;- les jeunes de moins de 26 ans, notamment les jeunes QPV<br />
+          &nbsp;- les personnes de plus de 50 ans (seniors)
         </li>
       </ul>
       
@@ -328,7 +345,7 @@
           <li>Médiation sociale auprès des habitants</li>
           <li>Écrivains publics bénévoles </li>
           <li>Accueil de permanences juridiques et sociales </li>
-          <li>Création et animation de jardins partagés.</li>
+          <li>Création et animation de jardins partagés</li>
   
       </ul>
     
