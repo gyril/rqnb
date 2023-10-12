@@ -32,34 +32,36 @@
             border-radius: 10px;
         }
 
-        .navbar a:hover {
-          background-color: #ffffff85;
+        .navbar a:not(:last-child):hover {
+          background-color: #56565685;
           color: #0977d3;
         }
 
         .navbar .icon {
             display: none;
+            color: white;
+            position: absolute;
+            right: 20px;
+            top: 10px;
         }
 
         @media screen and (max-width: 600px) {
-            .navbar a:not(:first-child) {
+            .navbar a {
                 display: none;
             }
-            .navbar a.icon {
-                float: right;
-                display: block;
+            .navbar .icon {
+              display: block;
             }
         }
 
         @media screen and (max-width: 600px) {
             .navbar.responsive {
                 position: relative;
+                flex-direction: column;
+                height: auto;
+                background-color: #56565685;
             }
-            .navbar.responsive .icon {
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
+            
             .navbar.responsive a {
                 float: none;
                 display: block;
@@ -83,7 +85,6 @@
             font-size: 3em;
             color: white;
             background-image: linear-gradient(0deg, #00000080 75%, transparent);
-            padding: 10px 20px;
             width: 100%;
             text-align: center;
             height: 550px;
@@ -182,6 +183,11 @@
         .orange-light {
           color: #ffda91 !important;
         }
+
+        .lateral-scroll {
+          overflow-y: hidden;
+          overflow-x: auto;
+        }
     </style>
 </head>
 
@@ -195,9 +201,9 @@
         <a class="vert-light" href="#qui-sommes-nous">Qui sommes-nous</a>
         <a class="bleu-light" href="#activites">Activités</a>
         <a class="orange-light" href="#contact">Nous contacter</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <div class="icon" onclick="myFunction()">
             &#9776;
-        </a>
+        </div>
       </div>
       <div class="hero-title">
         <p>
@@ -233,34 +239,36 @@
       <p>Le siège de la Régie est situé au <span style="font-weight: bold;">39A, rue Nationale, 13001 Marseille</span>.</p>
     
       <h2 id="gouvernance">Gouvernance</h2>
-      <table>
-        <!-- Header -->
-        <tr>
-            <td>Adhérents</td>
-            <td colspan="3">Assemblée générale constituée d'adhérents, acteurs locaux, institutions.</td>
-        </tr>
-        <!-- Row 1: Positions -->
-        <tr>
-            <td>Conseil d'Administration</td>
-            <td>Collège Habitants</td>
-            <td>Collège Membres de droits (désignés ès qualité)</td>
-            <td>Collège Acteur socio-économiques</td>
-        </tr>
-        <!-- Row 2: Names -->
-        <tr>
-            <td>John Doe</td>
-            <td>Jane Smith</td>
-            <td>Robert Brown</td>
-            <td>Emily White</td>
-        </tr>
-        <!-- Row 3: Additional info (e.g., department or contact) -->
-        <tr>
-            <td>Dept. A</td>
-            <td>Dept. B</td>
-            <td>Dept. C</td>
-            <td>Dept. D</td>
-        </tr>
-    </table>
+      <div class="lateral-scroll">
+        <table>
+          <!-- Header -->
+          <tr>
+              <td>Adhérents</td>
+              <td colspan="3">Assemblée générale constituée d'adhérents, acteurs locaux, institutions.</td>
+          </tr>
+          <!-- Row 1: Positions -->
+          <tr>
+              <td>Conseil d'Administration</td>
+              <td>Collège Habitants</td>
+              <td>Collège Membres de droits (désignés ès qualité)</td>
+              <td>Collège Acteur socio-économiques</td>
+          </tr>
+          <!-- Row 2: Names -->
+          <tr>
+              <td>John Doe</td>
+              <td>Jane Smith</td>
+              <td>Robert Brown</td>
+              <td>Emily White</td>
+          </tr>
+          <!-- Row 3: Additional info (e.g., department or contact) -->
+          <tr>
+              <td>Dept. A</td>
+              <td>Dept. B</td>
+              <td>Dept. C</td>
+              <td>Dept. D</td>
+          </tr>
+        </table>
+      </div>
     
       <h2 id="partenaires">Partenaires</h2>
       <div class="logos">
