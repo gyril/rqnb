@@ -98,7 +98,10 @@
           background-color: white;
           width: 200px;
           height: 200px;
-          border-radius: 100px;
+          position: absolute;
+          top: -11px;
+          left: -21px;
+          border-radius: 0px 100px 100px;
           overflow: hidden;
         }
 
@@ -133,9 +136,11 @@
 
         li {
             margin: 10px 0;
+            list-style: inside;
         }
 
         .logos img {
+            margin: 10px 40px 10px 0px;
             max-width: 100px;
             height: fit-content;
         }
@@ -152,12 +157,24 @@
           color: #88c896 !important;
         }
 
+        .vert-light {
+          color: #b0dfbb !important;
+        }
+
         .bleu {
           color: #80d0f1 !important;
         }
 
+        .bleu-light {
+          color: #b1def1 !important;
+        }
+
         .orange {
           color: #fbbf49 !important;
+        }
+
+        .orange-light {
+          color: #ffda91 !important;
         }
     </style>
 </head>
@@ -165,20 +182,20 @@
 <body>
 
     <div class="hero">
+      <div class="hero-logo">
+        <img src="logo.jpg">
+      </div>
       <div class="navbar" id="myNavbar">
-        <a class="vert" href="#qui-sommes-nous">Qui sommes-nous</a>
-        <a class="bleu" href="#activites">Activités</a>
-        <a class="orange" href="#contact">Nous contacter</a>
+        <a class="vert-light" href="#qui-sommes-nous">Qui sommes-nous</a>
+        <a class="bleu-light" href="#activites">Activités</a>
+        <a class="orange-light" href="#contact">Nous contacter</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             &#9776;
         </a>
       </div>
       <div class="hero-title">
-        <div class="hero-logo">
-          <img src="logo.jpg">
-        </div>
         <p>
-          Régie de quartier<br />
+          Régie de quartiers<br />
           Noailles-Belsunce
         </p>
       </div>
@@ -194,15 +211,15 @@
   
       <p>Les Régies poursuivent une triple finalité :</p>
   
-      <ol>
-        <li>Un projet citoyen  : les Régies mobilisent les habitants pour qu’ils participent aux décisions de l’association et à la gestion de leur cadre de vie.  Les habitants sont majoritaires dans les instances de gouvernance des Régies de quartiers et de territoires.</li>
+      <ul>
+        <li><strong>Un projet citoyen</strong> : les Régies mobilisent les habitants pour qu’ils participent aux décisions de l’association et à la gestion de leur cadre de vie.  Les habitants sont majoritaires dans les instances de gouvernance des Régies de quartiers et de territoires.</li>
         
-        <li>Une finalité sociale : une Régie génère du lien social à travers ses activités et ses services. Une Régie crée des emplois destinés aux habitants du territoire les plus en difficultés, et leur permet de construire un véritable parcours d’insertion par un accompagnement socioprofessionnel et une formation adaptée. </li>
+        <li><strong>Une finalité sociale</strong> : une Régie génère du lien social à travers ses activités et ses services, et contribue à la transition écologique.. Une Régie crée des emplois destinés aux habitants du territoire les plus en difficultés, et leur permet de construire un véritable parcours d’insertion par un accompagnement socioprofessionnel et une formation adaptée. </li>
     
-        <li>Une finalité économique : une Régie contractualise financièrement des marchés techniques dans le cadre de la gestion urbaine de proximité (entretien, maintenance et embellissement du cadre de vie). Une Régie crée des activités pour répondre à des besoins collectifs non satisfaits ou émergents. Elle réinjecte sur le territoire, en circuit court, les flux monétaires générés par son activité.</li>
-      </ol>
+        <li><strong>Une finalité économique</strong> : une Régie contractualise financièrement des marchés techniques dans le cadre de la gestion urbaine de proximité (entretien, maintenance et embellissement du cadre de vie). Une Régie crée des activités pour répondre à des besoins collectifs non satisfaits ou émergents. Elle réinjecte sur le territoire, en circuit court, les flux monétaires générés par son activité.</li>
+      </ul>
     
-      <h2 id="genese">Genèse du projet à Noailles-Belsunce</h2>
+      <h2 id="genese">Genèse du projet à Noailles et Belsunce</h2>
       <p>En partenariat avec la Ville de Marseille et la Mairie du 1er secteur, la création d’une Régie de quartiers est en cours à Belsunce et Noailles, deux quartiers emblématiques de Marseille, pour répondre aux difficultés d’emploi, de mal logement, d’insécurité, d’insalubrité et à l’ensemble des problèmes que rencontre ce territoire. 
   
       <p>La Régie de quartiers a à coeur de re-dynamiser ces deux territoires en proposant notamment comme remèdes une gestion urbaine partagée, un projet d’insertion à destination des habitants et des activités sociales venant répondre à leurs besoins.</p>
@@ -241,42 +258,72 @@
     
       <h2 id="partenaires">Partenaires</h2>
       <div class="logos">
-        <img src="prefet.png" alt="logo-partenaire">
-        <img src="mairie-1-7.png" alt="logo-partenaire">
-        <img src="mairie.png" alt="logo-partenaire">
-        <img src="mdr.png" alt="logo-partenaire">
-        <img src="pe.png" alt="logo-partenaire">
-        <img src="cco.png" alt="logo-partenaire">
-        <img src="rs13.png" alt="logo-partenaire">
-        <img src="rsnl.png" alt="logo-partenaire">
-        <img src="bdn.png" alt="logo-partenaire">
-        <img src="cc.png" alt="logo-partenaire">
-        <img src="df.png" alt="logo-partenaire">
+        <table>
+          <tr>
+            <td>
+              <img src="prefet.png" alt="logo-partenaire">
+            </td>
+            <td>
+              <img src="mairie-1-7.png" alt="logo-partenaire">
+            </td>
+            <td>
+              <img src="mairie.png" alt="logo-partenaire">
+            </td>
+            <td>
+              <img src="mdr.png" alt="logo-partenaire">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="pe.png" alt="logo-partenaire">
+            </td>
+            <td>
+              <img src="cco.png" alt="logo-partenaire">
+            </td>
+            <td>
+              <img src="rs13.png" alt="logo-partenaire">
+            </td>
+            <td>
+              <img src="rsnl.png" alt="logo-partenaire">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="bdn.png" alt="logo-partenaire">
+            </td>
+            <td>
+              <img src="cc.png" alt="logo-partenaire">
+            </td>
+            <td>
+              <img src="df.png" alt="logo-partenaire">
+            </td>
+            <td>
+              
+            </td>
+          </tr>
+        </table>
       </div>
     
       <h2 id="beneficiaires">Bénéficiaires</h2>
       <p>L’association accompagne deux catégories de bénéficiaires :</p>
   
-      <ol>
+      <ul>
         <li>
-          <p>
-            Les habitants des quartiers de Noailles et Belsunce, dans le 1er arrondissement de Marseille, deux quartiers prioritaires de la ville (QPV).<br />
-            Tous les habitants, adultes et enfants, hommes et femmes, peuvent ainsi bénéficier des actions de lien social portées par la Régie de quartiers, qu’il s’agisse d’organisation d’évènements conviviaux, de mise en place de maraudes, de mise à disposition de services (écrivains publics, salle informatique, soutien scolaire, etc.).</p>
+          <strong>Les habitants des quartiers de Noailles et Belsunce</strong>, dans le 1er arrondissement de Marseille, deux quartiers prioritaires de la ville (QPV).<br />
+          Tous les habitants, adultes et enfants, hommes et femmes, peuvent ainsi bénéficier des actions de lien social portées par la Régie de quartiers, qu’il s’agisse d’organisation d’évènements conviviaux, de mise en place de maraudes, de mise à disposition de services (écrivains publics, salle informatique, soutien scolaire, etc.).
         </li>
         <li>
-          <p>
-            Les salariés en insertion recrutés par la Régie de quartiers. <br /> 
-            Tous les salariés sont des personnes en difficulté vis-à-vis de l’emploi, avec un profil très différent selon leur contexte personnel et leur parcours de vie. La Régie de quartiers Noailles-Belsunce se fixe pour mission d’insérer des personnes pour lesquelles l’accès à l’emploi ne paraît pas envisageable dans les conditions ordinaires du marché de l’emploi et qui nécessitent un accompagnement renforcé, tels que : <br />
-            - les bénéficiaires des minimas sociaux (RSA, ASS, AAH…) <br />
-            - les demandeurs d’emplois inscrits depuis plus de 12 mois <br />
-            - les bas niveaux de qualification <br />
-            - les personnes en situation de handicap <br />
-            - les personnes placées sous main de justice <br />
-            - les jeunes de moins de 26 ans, notamment les jeunes QPV <br />
-            - les personnes de plus de 50 ans (seniors).
-          </p>
+          <strong>Les salariés en insertion recrutés par la Régie de quartiers.</strong> <br /> 
+          Tous les salariés sont des personnes en difficulté vis-à-vis de l’emploi, avec un profil très différent selon leur contexte personnel et leur parcours de vie. La Régie de quartiers Noailles-Belsunce se fixe pour mission d’insérer des personnes pour lesquelles l’accès à l’emploi ne paraît pas envisageable dans les conditions ordinaires du marché de l’emploi et qui nécessitent un accompagnement renforcé, tels que : <br />
+          &nbsp;- les bénéficiaires des minimas sociaux (RSA, ASS, AAH…) ;<br />
+          &nbsp;- les demandeurs d’emplois inscrits depuis plus de 12 mois ;<br />
+          &nbsp;- les bas niveaux de qualification ;<br />
+          &nbsp;- les personnes en situation de handicap ;<br />
+          &nbsp;- les personnes placées sous main de justice ;<br />
+          &nbsp;- les jeunes de moins de 26 ans, notamment les jeunes QPV ;<br />
+          &nbsp;- les personnes de plus de 50 ans (seniors).
         </li>
-      </ol>
+      </ul>
       
   
     
@@ -306,8 +353,8 @@
     
       <h1 class="orange" id="contact">Nous contacter</h1>
       <div class="contact-info">
-          <p>adresse : 39 A rue Nationale 13001 Marseille</p>
-          <p>mail : <a href="mailto:contact@regienoaillesbelsunce.org">contact@regienoaillesbelsunce.org</a></p>
+          <p>🏢 39 A rue Nationale 13001 Marseille</p>
+          <p>📧 <a href="mailto:contact@regienoaillesbelsunce.org">contact@regienoaillesbelsunce.org</a></p>
       </div>
     </div>
 
