@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Régie de Quartier Noailles-Belsunce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h2 {
+            margin-top: 30px;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            margin: 10px 0;
+        }
+        .logos {
+            display: flex;
+            justify-content: space-between;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        /* Styles pour la navigation */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            margin-bottom: 50px;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            padding: 10px 0;
+        }
+
+        h1 {
+            border-bottom: 3px solid #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        .logos img {
+            max-width: 100px;
+            height: fit-content;
+        }
+
+        .contact-info {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styles pour la navigation */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            .navbar a {
+                float: none;
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+            background-image: linear-gradient(to right, #88c896 , #80d0f1);
+            /* background-image: linear-gradient(to right, #80d0f1 , #fbbf49); */
+        }
+
+        .navbar a, .dropdown-content a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover, .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            padding: 0;
+            margin: 0;
+            color: white;
+            background-color: inherit;
+            font-family: inherit;
+        }
+
+        .navbar .dropdown:hover .dropbtn {
+            background-color: #555;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 230px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            .navbar a, .dropdown .dropbtn {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+            }
+
+            .navbar .dropdown-content {
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <!-- Dropdown Menu -->
+    <div class="dropdown">
+        <button class="dropbtn"><a href="#qui-sommes-nous">Qui sommes-nous ?</a></button>
+        <div class="dropdown-content">
+            <a href="#c-est-quoi">Une Régie de quartiers, c'est quoi ?</a>
+            <a href="#genese">Genèse du projet à Noailles-Belsunce</a>
+            <a href="#gouvernance">Gouvernance</a>
+            <a href="#partenaires">Partenaires</a>
+            <a href="#beneficiaires">Bénéficiaires</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="#activites">Les activités</a></button>
+        <div class="dropdown-content">
+            <a href="#prestations">Prestations</a>
+            <a href="#lien-social">Lien social</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="#contact">Nous contacter</a></button>
+      </div>
+  </div>
+
+  <div class="container">
+    <h1 id="qui-sommes-nous">Qui sommes-nous ?</h1>
+    
+    <h2 id="c-est-quoi">Une Régie de quartiers, c'est quoi ?</h2>
+    <p>Une Régie de quartiers est une association qui regroupe des habitants, des collectivités locales et des bailleurs sociaux pour intervenir ensemble dans la gestion de leur territoire. À travers ses missions techniques, la Régie concourt à un projet global, ancré dans l’Économie sociale et solidaire, afin de contribuer à l’amélioration du cadre de vie et au vivre ensemble.</p>
+
+    <p>Les Régies de quartiers sont des structures labellisées par le Mouvement des Régies. Implantées sur l’ensemble du territoire national, la France compte 131 Régies de quartiers et Régies de territoires couvrant 320 quartiers prioritaires où vivent plus de 3 millions d’habitants.</p>
+
+    <p>Les Régies poursuivent une triple finalité :</p>
+
+    <ol>
+      <li>Un projet citoyen  : les Régies mobilisent les habitants pour qu’ils participent aux décisions de l’association et à la gestion de leur cadre de vie.  Les habitants sont majoritaires dans les instances de gouvernance des Régies de quartiers et de territoires.</li>
+      
+      <li>Une finalité sociale : une Régie génère du lien social à travers ses activités et ses services. Une Régie crée des emplois destinés aux habitants du territoire les plus en difficultés, et leur permet de construire un véritable parcours d’insertion par un accompagnement socioprofessionnel et une formation adaptée. </li>
+  
+      <li>Une finalité économique : une Régie contractualise financièrement des marchés techniques dans le cadre de la gestion urbaine de proximité (entretien, maintenance et embellissement du cadre de vie). Une Régie crée des activités pour répondre à des besoins collectifs non satisfaits ou émergents. Elle réinjecte sur le territoire, en circuit court, les flux monétaires générés par son activité.</li>
+    </ol>
+  
+    <h2 id="genese">Genèse du projet à Noailles-Belsunce</h2>
+    <p>En partenariat avec la Ville de Marseille et la Mairie du 1er secteur, la création d’une Régie de quartiers est en cours à Belsunce et Noailles, deux quartiers emblématiques de Marseille, pour répondre aux difficultés d’emploi, de mal logement, d’insécurité, d’insalubrité et à l’ensemble des problèmes que rencontre ce territoire. 
+
+    <p>La Régie de quartiers a à coeur de re-dynamiser ces deux territoires en proposant notamment comme remèdes une gestion urbaine partagée, un projet d’insertion à destination des habitants et des activités sociales venant répondre à leurs besoins.</p>
+      
+    <p>Le siège de la Régie est situé au <span style="font-weight: bold;">39A, rue Nationale, 13001 Marseille</span>.</p>
+  
+    <h2 id="gouvernance">Gouvernance</h2>
+    <table>
+      <!-- Header -->
+      <tr>
+          <td>Adhérents</td>
+          <td colspan="3">Assemblée générale constituée d'adhérents, acteurs locaux, institutions.</td>
+      </tr>
+      <!-- Row 1: Positions -->
+      <tr>
+          <td>Conseil d'Administration</td>
+          <td>Collège Habitants</td>
+          <td>Collège Membres de droits (désignés ès qualité)</td>
+          <td>Collège Acteur socio-économiques</td>
+      </tr>
+      <!-- Row 2: Names -->
+      <tr>
+          <td>John Doe</td>
+          <td>Jane Smith</td>
+          <td>Robert Brown</td>
+          <td>Emily White</td>
+      </tr>
+      <!-- Row 3: Additional info (e.g., department or contact) -->
+      <tr>
+          <td>Dept. A</td>
+          <td>Dept. B</td>
+          <td>Dept. C</td>
+          <td>Dept. D</td>
+      </tr>
+  </table>
+  
+    <h2 id="partenaires">Partenaires</h2>
+    <div class="logos">
+      <img src="prefet.png" alt="logo-partenaire">
+      <img src="mairie-1-7.png" alt="logo-partenaire">
+      <img src="mairie.png" alt="logo-partenaire">
+      <img src="mdr.png" alt="logo-partenaire">
+      <img src="pe.png" alt="logo-partenaire">
+      <img src="cco.png" alt="logo-partenaire">
+      <img src="rs13.png" alt="logo-partenaire">
+      <img src="rsnl.png" alt="logo-partenaire">
+      <img src="bdn.png" alt="logo-partenaire">
+      <img src="cc.png" alt="logo-partenaire">
+      <img src="df.png" alt="logo-partenaire">
+    </div>
+  
+    <h2 id="beneficiaires">Bénéficiaires</h2>
+    <p>L’association accompagne deux catégories de bénéficiaires :</p>
+
+    <ol>
+      <li>
+        <p>
+          les habitants des quartiers de Noailles et Belsunce, dans le 1er arrondissement de Marseille, deux quartiers prioritaires de la ville (QPV).<br />
+          Tous les habitants, adultes et enfants, hommes et femmes, peuvent ainsi bénéficier des actions de lien social portées par la Régie de quartiers, qu’il s’agisse d’organisation d’évènements conviviaux, de mise en place de maraudes, de mise à disposition de services (écrivains publics, salle informatique, soutien scolaire, etc.).</p>
+      </li>
+      <li>
+        <p>
+          les salariés en insertion recrutés par la Régie de quartiers. <br /> 
+          Tous les salariés sont des personnes en difficulté vis-à-vis de l’emploi, avec un profil très différent selon leur contexte personnel et leur parcours de vie. La Régie de quartiers Noailles-Belsunce se fixe pour mission d’insérer des personnes pour lesquelles l’accès à l’emploi ne paraît pas envisageable dans les conditions ordinaires du marché de l’emploi et qui nécessitent un accompagnement renforcé, tels que : <br />
+          - les bénéficiaires des minimas sociaux (RSA, ASS, AAH…) <br />
+          - les demandeurs d’emplois inscrits depuis plus de 12 mois <br />
+          - les bas niveaux de qualification <br />
+          - les personnes en situation de handicap <br />
+          - les personnes placées sous main de justice <br />
+          - les jeunes de moins de 26 ans, notamment les jeunes QPV <br />
+          - les personnes de plus de 50 ans (seniors).
+        </p>
+      </li>
+    </ol>
+    
+
+  
+    <h1 id="activites">Les activités de la Régie de quartiers Noailles-Belsunce</h1>
+
+    <h2 id="prestations">Prestations</h2>
+    <ul>
+        <li>Végétalisation des rues, entretien des espaces verts</li>
+        <li>Surentretien de la voirie</li>
+        <li>Nettoyage de tags</li>
+        <li>Distribution de repas et denrées</li>
+        <li>Prévention et lutte contre les punaises de lit</li>
+        <li>Livraisons en mobilité douce aux commerçants et particuliers</li>
+        <li>Second-oeuvre de bâtiments (peinture, petits travaux, etc.)</li>
+        <li>Entretien et nettoyage d’équipements publics et privés </li>
+    </ul>
+  
+    <h2 id="lien-social">Lien social</h2>
+    <ul>
+        <li>Mise à disposition d’une salle informatique à destination des habitants du quartier</li>
+        <li>Médiation sociale auprès des habitants</li>
+        <li>Écrivains publics bénévoles </li>
+        <li>Accueil de permanences juridiques et sociales </li>
+        <li>Création et animation de jardins partagés.</li>
+
+    </ul>
+  
+    <h1 id="contact">Nous contacter</h1>
+    <div class="contact-info">
+        <p>adresse : 39 A rue Nationale 13001 Marseille</p>
+        <p>mail : <a href="mailto:contact@regienoaillesbelsunce.org">contact@regienoaillesbelsunce.org</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
