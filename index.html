@@ -97,14 +97,19 @@
         }
 
         .hero-logo {
-          background-color: white;
           width: 200px;
           height: 200px;
           position: absolute;
-          top: -11px;
-          left: -21px;
+          top: 0px;
+          left: 0px;
           border-radius: 0px 100px 100px;
           overflow: hidden;
+        }
+
+        @media screen and (max-width: 600px) {
+          .hero-logo {
+            left: auto;
+          }
         }
 
         .hero-logo img {
@@ -216,7 +221,7 @@
 
     <div class="hero">
       <div class="hero-logo">
-        <img src="logo.jpg">
+        <img src="logo-transparent.png">
       </div>
       <div class="navbar" id="myNavbar">
         <a class="vert-light" href="#qui-sommes-nous">Qui sommes-nous</a>
